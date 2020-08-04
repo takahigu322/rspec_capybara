@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Higutrello</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="header">
+  <nav class="nav"> <%# ナビゲーション内の主要なブロックに入れる　%>
+  <ul class="header_menu">
+    <li class="nav_link">takahiguさん</li>
+    <li class="header_menu_title"><%= link_to "takahigu", root_path, class: "nav-link"%></li>
+    <li>
+      <ul class="header_menu_inner">
+        <%# リストのリンクは#にしておく%>
+        <li><%= link_to "リスト作成","#",class: "nav-link listNew" %></li>
+        <%# <%= link_to "文字列", パス, class: "class名" %>
+        <li><%= link_to "サインアウト","#",class: "nav-link"%></li>
+      </ul>
+    </li>
+  </ul>
+
+  </nav>
+  </header>
+    <%= yield %>
+  </body>
+</html>
