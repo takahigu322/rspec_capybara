@@ -5,9 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-ruby 2.7.0p0
+- Ruby version
 
-* Rails version
-Rails 5.2.4.3
-* ...
+    - ruby 2.7.0
+
+- Rails version
+
+    - Rails 5.2.4.3
+
+
