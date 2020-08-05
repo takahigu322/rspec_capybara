@@ -12,5 +12,13 @@ Things you may want to cover:
 - Rails version
 
     - Rails 5.2.4.3
+    
+
+# Capybara
+## 目的
+- capybaraでテストフレームワークを書くため
+
+## 参考記事
+- https://www.oiax.jp/rails/rspec_capybara_primer.html
 
 
