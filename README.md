@@ -20,5 +20,5 @@ Things you may want to cover:
 
 ## 参考記事
 - https://www.oiax.jp/rails/rspec_capybara_primer.html
-
+- https://blog.takady.net/blog/2014/11/26/turnip/
 
