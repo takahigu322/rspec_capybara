@@ -1,5 +1,6 @@
 body {
   overflow: visible;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .notice,
@@ -23,8 +24,10 @@ body {
       li {
         list-style: none;
         color: #fff;
+        font-family: Georgia, serif;
         a {
           color: #fff;
+          font-family: Georgia, serif;
         }
       }
       &_title {
@@ -33,6 +36,7 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: bold;
       }
       &_inner {
@@ -46,6 +50,7 @@ body {
             display: inline-block;
             margin-left: 10px;
             font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           }
         }
       }
