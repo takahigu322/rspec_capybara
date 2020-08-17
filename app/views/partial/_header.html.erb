@@ -1,0 +1,18 @@
+<%# 通常のviewと区別するために_をつける%>
+
+<header class = "header">
+  <nav class="nav">
+    <ul class="header_menu">
+      <li class="nav-link">takahiguさん</li>
+      <li clsss="header_menu_title"><%= link_to "kanban", root_path, class: "nav-link"%></li>
+      <li>
+        <ul class="header_menu_inner">
+          <%# リストのリンクは#にしておく%>
+          <li><%= link_to "リスト作成","#",class: "nav-link listNew" %></li>
+          <%# <%= link_to "文字列", パス, class: "class名" %>
+          <li><%= link_to "サインアウト","#",class: "nav-link"%></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
