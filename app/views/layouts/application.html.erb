@@ -10,23 +10,21 @@
   </head>
 
   <body>
-  <header class="header">
-  <nav class="nav"> <%# ナビゲーション内の主要なブロックに入れる　%>
-  <ul class="header_menu">
-    <li class="nav_link">takahiguさん</li>
-    <li class="header_menu_title"><%= link_to "takahigu", root_path, class: "nav-link"%></li>
-    <li>
-      <ul class="header_menu_inner">
-        <%# リストのリンクは#にしておく%>
-        <li><%= link_to "リスト作成","#",class: "nav-link listNew" %></li>
-        <%# <%= link_to "文字列", パス, class: "class名" %>
-        <li><%= link_to "サインアウト","#",class: "nav-link"%></li>
-      </ul>
-    </li>
-  </ul>
+  <%# <header>のコードをテンプレート化する,呼び出す際には_は不要%>
+    <%= render 'partial/header' if current_user %>
 
-  </nav>
-  </header>
+    <%# フラッシュメッセージを表示させる%>
+    <% if flash[:notice] %>
+      <div class="alert alert-info">
+        <%= flash[:notice]%>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="alert alert-danger">
+        <%= flash[:alert]%>
+      </div>
+    <% end %>
+  
     <%= yield %>
   </body>
 </html>
